@@ -7,7 +7,7 @@
 [![Platform: Windows](https://img.shields.io/badge/Platform-Windows-blue.svg)](#installation)
 [![Platform: macOS](https://img.shields.io/badge/Platform-macOS-lightgrey.svg)](#installation)
 [![phpVMS 7](https://img.shields.io/badge/phpVMS-7-orange.svg)](https://phpvms.net)
-[![Version](https://img.shields.io/badge/Version-1.7.22-blue.svg)](https://github.com/MANFahrer-GF/ASA-ACARS/releases/latest)
+[![Version](https://img.shields.io/badge/Version-1.7.22-blue.svg)](https://github.com/oPortuga3K/ASA-ACARS/releases/latest)
 [![Tauri 2](https://img.shields.io/badge/Tauri-2-24c8d8.svg)](https://tauri.app)
 
 ---
@@ -49,7 +49,7 @@
 
 ASA-ACARS is open source (MIT). Any virtual airline is welcome to clone, adapt, and build the code for its **own** phpVMS 7 instance.
 
-The **officially released builds** (installers in [GitHub Releases](https://github.com/MANFahrer-GF/ASA-ACARS/releases)) are hard-wired to Atlantic Star Airways: login, live tracking, and PIREP submission only work with an ASA pilot account. To use ASA-ACARS for a different VA, build your own client from source against your own infrastructure.
+The **officially released builds** (installers in [GitHub Releases](https://github.com/oPortuga3K/ASA-ACARS/releases)) are hard-wired to Atlantic Star Airways: login, live tracking, and PIREP submission only work with an ASA pilot account. To use ASA-ACARS for a different VA, build your own client from source against your own infrastructure.
 
 ### 🇩🇪 Deutsch
 
@@ -208,7 +208,7 @@ ASA-ACARS outperforms competitors (Volanta, SimCARS) with a dedicated high-frequ
 
 ## Installation
 
-Download the package for your platform from the [Latest Release](https://github.com/MANFahrer-GF/ASA-ACARS/releases/latest).
+Download the package for your platform from the [Latest Release](https://github.com/oPortuga3K/ASA-ACARS/releases/latest).
 
 ### Windows (10 / 11, x64)
 
@@ -300,7 +300,7 @@ Deep study-level aircraft in X-Plane (Hot-Start CL650, ToLiss, FlightFactor, PMD
 2. Load your aircraft at the gate
 3. In Plugins → DataRefTool → Show DataRefs, search for the add-on prefix (e.g. `CL650/`, `AirbusFBW/`, `1-sim/`)
 4. Operate each control and note which DataRef changes
-5. Submit the filled template via the [Issue Tracker](https://github.com/MANFahrer-GF/ASA-ACARS/issues)
+5. Submit the filled template via the [Issue Tracker](https://github.com/oPortuga3K/ASA-ACARS/issues)
 
 ---
 
@@ -316,7 +316,7 @@ Deep study-level aircraft in X-Plane (Hot-Start CL650, ToLiss, FlightFactor, PMD
 ### Getting Started
 
 ```bash
-git clone https://github.com/MANFahrer-GF/ASA-ACARS.git
+git clone https://github.com/oPortuga3K/ASA-ACARS.git
 cd ASA-ACARS/client
 
 # Install frontend dependencies
@@ -412,7 +412,7 @@ The most useful information for a bug report:
 2. The relevant excerpt from `activity_log.json`
 3. If reproducible: a few lines of tracing output via `RUST_LOG=info,asa-acars=debug` from a terminal run
 
-Submit issues at → **[github.com/MANFahrer-GF/ASA-ACARS/issues](https://github.com/MANFahrer-GF/ASA-ACARS/issues)**
+Submit issues at → **[github.com/MANFahrer-GF/ASA-ACARS/issues](https://github.com/oPortuga3K/ASA-ACARS/issues)**
 
 ---
 
@@ -441,4 +441,4 @@ Copyright © 2026 Thomas Kant and ASA-ACARS contributors.
 
 ---
 
-**Contact:** Thomas Kant · Atlantic Star Airways · [github.com/MANFahrer-GF](https://github.com/MANFahrer-GF)
+**Contact:** Thomas Kant · Atlantic Star Airways · [github.com/MANFahrer-GF](https://github.com/oPortuga3K)
