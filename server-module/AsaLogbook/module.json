@@ -1,0 +1,10 @@
+{
+  "name": "AsaLogbook",
+  "alias": "asalogbook",
+  "description": "ASA-ACARS Extended Logbook - pilot stats, PIREP history with ACARS data",
+  "keywords": ["asaacars", "logbook", "asa"],
+  "priority": 1,
+  "providers": ["Modules\\AsaLogbook\\Providers\\AsaLogbookServiceProvider"],
+  "aliases": {},
+  "files": []
+}

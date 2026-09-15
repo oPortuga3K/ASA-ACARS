@@ -1,0 +1,10 @@
+{
+  "name": "AsaNews",
+  "alias": "asanews",
+  "description": "ASA-ACARS News read-state tracking for phpVMS news",
+  "keywords": ["asaacars", "news", "asa"],
+  "priority": 1,
+  "providers": ["Modules\\AsaNews\\Providers\\AsaNewsServiceProvider"],
+  "aliases": {},
+  "files": []
+}

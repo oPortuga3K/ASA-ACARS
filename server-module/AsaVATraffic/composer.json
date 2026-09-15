@@ -1,0 +1,5 @@
+{
+  "name": "atlanticstar/asa-vatraffic",
+  "description": "ASA-ACARS Live VA Traffic phpVMS module",
+  "autoload": {"psr-4": {"Modules\\AsaVATraffic\\": ""}}
+}

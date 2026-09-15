@@ -1,0 +1,6 @@
+{
+  "name": "atlanticstar/asa-logbook",
+  "description": "ASA-ACARS Extended Logbook phpVMS module",
+  "require": {"atlanticstar/asa-core": "*"},
+  "autoload": {"psr-4": {"Modules\\AsaLogbook\\": ""}}
+}

@@ -1,0 +1,13 @@
+{
+  "name": "atlanticstar/asa-core",
+  "description": "ASA-ACARS Core phpVMS module",
+  "authors": [{"name": "Atlantic Star Airways"}],
+  "extra": {
+    "laravel": {
+      "providers": ["Modules\\AsaCore\\Providers\\AsaCoreServiceProvider"]
+    }
+  },
+  "autoload": {
+    "psr-4": {"Modules\\AsaCore\\": ""}
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "AsaVATraffic",
+  "alias": "asavatraffic",
+  "description": "ASA-ACARS Live VA Traffic - real-time position of all active ASA pilots",
+  "keywords": ["asaacars", "traffic", "live", "asa"],
+  "priority": 1,
+  "providers": ["Modules\\AsaVATraffic\\Providers\\AsaVATrafficServiceProvider"],
+  "aliases": {},
+  "files": []
+}

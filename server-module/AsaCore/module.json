@@ -1,0 +1,12 @@
+{
+  "name": "AsaCore",
+  "alias": "asacore",
+  "description": "ASA-ACARS Core Module - Landing data, heartbeat, config, runway reports",
+  "keywords": ["asaacars", "acars", "asa"],
+  "priority": 0,
+  "providers": [
+    "Modules\\AsaCore\\Providers\\AsaCoreServiceProvider"
+  ],
+  "aliases": {},
+  "files": []
+}

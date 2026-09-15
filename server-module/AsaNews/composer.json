@@ -1,0 +1,5 @@
+{
+  "name": "atlanticstar/asa-news",
+  "description": "ASA-ACARS News phpVMS module",
+  "autoload": {"psr-4": {"Modules\\AsaNews\\": ""}}
+}

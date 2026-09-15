@@ -1,0 +1,169 @@
+/* Pilotenchat — Redesign Mockup 2 (Zinc dark + sky accent) */
+@reference "../App.css";
+
+.chat {
+  @apply flex flex-col h-full min-h-0 border border-zinc-800 rounded-2xl bg-zinc-900 overflow-hidden;
+}
+
+.chat__kopf {
+  @apply flex items-center gap-4 px-5 py-3.5 border-b border-zinc-800 bg-zinc-950/80 backdrop-blur-md flex-none;
+}
+.chat__titel {
+  @apply text-base font-bold tracking-tight text-white;
+}
+.chat__wer {
+  @apply flex items-center gap-2 font-mono text-xs text-zinc-500;
+}
+.chat__punkt {
+  @apply w-2 h-2 rounded-full bg-emerald-500 flex-none shadow-[0_0_6px_rgba(16,185,129,0.6)];
+}
+
+.chat__regeln-kurz {
+  @apply text-xs text-zinc-600 ml-auto;
+}
+.chat__regeln {
+  @apply ml-2 bg-transparent border border-zinc-700 rounded-lg text-zinc-500 text-xs px-3 py-1 cursor-pointer whitespace-nowrap transition-colors hover:border-sky-500 hover:text-sky-400;
+}
+.chat__regeln:focus-visible { @apply outline-none ring-2 ring-sky-500 ring-offset-1 ring-offset-zinc-900; }
+
+/* ── Wer fliegt ─────────────────────────────── */
+.chat__leiste {
+  @apply flex flex-wrap gap-2 p-3 border-b border-zinc-800 bg-zinc-950/50 flex-none max-h-[30vh] overflow-y-auto;
+}
+.chat__pilot {
+  @apply flex flex-col gap-0.5 flex-none bg-zinc-900 border border-zinc-700 rounded-xl px-3 py-2 cursor-pointer text-left text-inherit transition-all hover:border-sky-500/60 hover:bg-zinc-800/60;
+}
+.chat__pilot:focus-visible { @apply outline-none ring-2 ring-sky-500; }
+.chat__pilot--ziel { @apply border-sky-500 bg-sky-950/30; }
+.chat__pilot--stumm { @apply opacity-50 cursor-default; }
+.chat__pilot--stumm:hover { @apply border-zinc-700; }
+.chat__pilot--stumm .chat__pilot-ruf { @apply text-zinc-500; }
+.chat__pilot-name { @apply text-sm font-bold text-white; }
+.chat__pilot-ruf { @apply font-mono text-xs tracking-wider text-sky-400; }
+.chat__pilot-weg { @apply font-mono text-[10px] text-zinc-500; }
+
+/* ── Verlauf ─────────────────────────────────── */
+.chat__log {
+  @apply flex-auto min-h-0 overflow-y-auto px-4 py-3 flex flex-col gap-1;
+}
+.chat__leer {
+  @apply text-zinc-500 text-sm py-8 text-center;
+}
+
+.chat__msg {
+  @apply grid gap-3 px-2 py-1.5 rounded-xl text-sm items-baseline;
+  grid-template-columns: 46px minmax(0, 1fr);
+}
+.chat__msg time {
+  @apply font-mono text-[10px] text-zinc-600 tabular-nums;
+}
+.chat__who {
+  @apply font-mono font-bold text-xs tracking-wider text-sky-400 mr-2;
+}
+.chat__name {
+  @apply text-zinc-500 text-xs mr-2;
+}
+.chat__msg--eigen { @apply bg-zinc-800/50; }
+.chat__msg--eigen .chat__who { @apply text-zinc-300; }
+.chat__msg--direkt { @apply bg-sky-950/30; }
+.chat__marke {
+  @apply font-mono text-[10px] tracking-wider px-1.5 py-0.5 rounded border border-sky-500/50 text-sky-400 mr-2;
+}
+.chat__msg--ops { @apply bg-amber-500/10; }
+.chat__msg--ops .chat__who { @apply text-amber-400; }
+.chat__marke--ops { @apply border-amber-500/50 text-amber-400; }
+
+/* ── Schnellzurufe + Eingabe ─────────────────── */
+.chat__schnell {
+  @apply flex flex-wrap items-center gap-2 px-4 pt-3 bg-zinc-900 border-t border-zinc-800 flex-none;
+}
+.chat__schnell-marke {
+  @apply font-mono text-[10px] tracking-widest uppercase text-zinc-500 mr-1;
+}
+.chat__schnell button {
+  @apply bg-zinc-800 border border-zinc-700 text-zinc-400 rounded-lg px-3 py-1.5 text-xs cursor-pointer whitespace-nowrap transition-all hover:border-sky-500/60 hover:text-sky-300 disabled:opacity-50 disabled:cursor-default;
+}
+.chat__schnell button:focus-visible { @apply outline-none ring-2 ring-sky-500; }
+
+.chat__eingabe {
+  @apply flex gap-2 p-3 bg-zinc-900 flex-none;
+}
+.chat__schnell + .chat__eingabe { border-top: 0; }
+.chat__log + .chat__eingabe { @apply border-t border-zinc-800; }
+.chat__eingabe input {
+  @apply flex-1 min-w-0 bg-zinc-950 border border-zinc-700 rounded-xl text-white text-sm px-4 py-2.5 outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500/40 placeholder:text-zinc-600;
+}
+
+/* ── Direktnachricht ─────────────────────────── */
+.chat__an-wen {
+  @apply flex items-center gap-2 px-4 py-2 bg-sky-950/30 border-t border-sky-500/30 text-sm text-sky-300 flex-none;
+}
+.chat__an-wen b { @apply text-white font-bold; }
+.chat__an-ruf { @apply font-mono text-xs tracking-wider; }
+.chat__an-weg {
+  @apply ml-auto bg-transparent border border-sky-500/40 text-sky-400 rounded-lg text-xs px-3 py-1 cursor-pointer transition-colors hover:text-white hover:border-sky-400;
+}
+
+/* ── Statushinweise ──────────────────────────── */
+.chat__fokus {
+  @apply flex items-center gap-2 px-4 py-2 bg-zinc-900 border-t border-zinc-800 text-xs text-zinc-300 flex-none;
+}
+.chat__fokus::before { content: "⌨"; @apply text-amber-400 text-base leading-none; }
+.chat__fokus kbd { @apply font-mono text-[10px] border border-amber-500/60 rounded px-1.5 py-0.5 text-amber-400; }
+
+.chat__gesperrt {
+  @apply px-4 py-3 bg-zinc-950/50 border-t border-zinc-800 text-sm text-zinc-300 flex-none;
+}
+
+.chat__zu {
+  @apply flex flex-col gap-1 p-5 border-t border-zinc-800 bg-zinc-900 flex-none;
+}
+.chat__zu strong { @apply text-sm font-bold text-white; }
+.chat__zu span { @apply text-xs text-zinc-500 max-w-[62ch]; }
+.chat__zu-link {
+  @apply self-start mt-1 bg-transparent border-0 p-0 text-xs text-sky-400 cursor-pointer underline underline-offset-2 hover:text-white;
+}
+.chat__zu-link:focus-visible { @apply outline-none ring-2 ring-sky-500; }
+
+/* ── Chat-Einblendung (Toast) ───────────────── */
+.chat-einblendung {
+  @apply cursor-pointer max-w-[46ch] hover:border-sky-500;
+}
+.chat-einblendung .ui-notice__text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  @apply overflow-hidden;
+}
+.chat-einblendung__oeffnen {
+  @apply bg-transparent border border-zinc-700 rounded-lg text-zinc-400 text-xs px-3 py-1 cursor-pointer whitespace-nowrap transition-all hover:border-sky-500 hover:text-sky-300;
+}
+.chat-einblendung__oeffnen:focus-visible { @apply outline-none ring-2 ring-sky-500; }
+
+/* ── VATSIM CDM ─────────────────────────────── */
+.cdm {
+  @apply flex flex-col h-full min-h-0 border border-zinc-800 rounded-2xl bg-zinc-900 overflow-hidden;
+}
+.cdm__kopf {
+  @apply flex items-baseline gap-3 px-5 py-3.5 border-b border-zinc-800 bg-zinc-950/80 flex-none;
+}
+.cdm__titel { @apply m-0 text-lg font-bold tracking-tight text-white; }
+.cdm__quelle { @apply font-mono text-xs text-zinc-500; }
+.cdm__knoepfe { @apply ml-auto flex gap-2; }
+.cdm__flaeche { @apply flex-auto min-h-0 bg-zinc-950 relative; }
+.cdm__rahmen { @apply w-full h-full border-0 block bg-white; }
+.cdm__erklaerung {
+  @apply absolute inset-0 flex flex-col items-center justify-center gap-4 p-8 text-center;
+}
+.cdm__erklaerung strong { @apply text-xl font-bold text-white; }
+.cdm__erklaerung span { @apply text-zinc-400 text-sm max-w-[64ch] leading-relaxed; }
+.cdm__leise { @apply text-xs! opacity-80; }
+.cdm__fehler { @apply text-amber-400 text-xs; }
+.cdm__ersatz {
+  @apply absolute inset-0 flex flex-col items-center justify-center gap-4 p-8 text-center;
+}
+.cdm__ersatz strong { @apply text-xl font-bold text-white; }
+.cdm__ersatz span { @apply text-zinc-400 text-sm max-w-[62ch] leading-relaxed; }
+.cdm__fuss {
+  @apply m-0 px-5 py-2 border-t border-zinc-800 bg-zinc-900 text-xs text-zinc-600 flex-none;
+}
