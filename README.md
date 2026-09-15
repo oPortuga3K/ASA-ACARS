@@ -1,7 +1,7 @@
 # ASA-ACARS
 
 > Modern, open-source ACARS client for [phpVMS 7](https://phpvms.net) — Tauri 2 · Rust · React 19.  
-> Built with ❤️ in Gifhorn — by Thomas Kant & Atlantic Star Airways.
+> Built with ❤️ in Azores — by Rui Alves & Atlantic Star Airways.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Platform: Windows](https://img.shields.io/badge/Platform-Windows-blue.svg)](#installation)
@@ -437,8 +437,8 @@ ASA-ACARS stands on the shoulders of:
 
 MIT — see [LICENSE](LICENSE).
 
-Copyright © 2026 Thomas Kant and ASA-ACARS contributors.
+Copyright © 2026 Rui Alves and ASA-ACARS contributors.
 
 ---
 
-**Contact:** Thomas Kant · Atlantic Star Airways · [github.com/oPortuga3K](https://github.com/oPortuga3K)
+**Contact:** Rui Alves · Atlantic Star Airways · [github.com/oPortuga3K](https://github.com/oPortuga3K)
