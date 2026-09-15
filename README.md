@@ -412,7 +412,7 @@ The most useful information for a bug report:
 2. The relevant excerpt from `activity_log.json`
 3. If reproducible: a few lines of tracing output via `RUST_LOG=info,asa-acars=debug` from a terminal run
 
-Submit issues at → **[github.com/MANFahrer-GF/ASA-ACARS/issues](https://github.com/oPortuga3K/ASA-ACARS/issues)**
+Submit issues at → **[github.com/oPortuga3K/ASA-ACARS/issues](https://github.com/oPortuga3K/ASA-ACARS/issues)**
 
 ---
 
@@ -441,4 +441,4 @@ Copyright © 2026 Thomas Kant and ASA-ACARS contributors.
 
 ---
 
-**Contact:** Thomas Kant · Atlantic Star Airways · [github.com/MANFahrer-GF](https://github.com/oPortuga3K)
+**Contact:** Thomas Kant · Atlantic Star Airways · [github.com/oPortuga3K](https://github.com/oPortuga3K)
